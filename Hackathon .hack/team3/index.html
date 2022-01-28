@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Teams</title>
+    <link rel="stylesheet" type="text/css" href="../team3/css/style_team.css" />
+    <link rel="stylesheet" type="text/css" href="../team3/css/style_joinus.css"/>
+    <script src="../team3/script/script.js"></script>
+    </head>
+
+  <body>
+    <div class="header">Our Team</div>
+
+    <section id="team">
+      <div class="team" style="--img: url(../team3/images/1.jpg)">
+        <img src="../team3/images/1.jpg" alt="image1" />
+        <div class="info">
+          <div class="name">Shinoj Muraleedharan</div>
+          <div class="title">Project</div> 
+        </div>
+      </div>
+
+      <div class="team" style="--img: url(../team3/images/2.jpg)">
+        <img src="../team3/images/2.jpg" alt="image2" />
+        <div class="info">
+          <div class="name">Shreyas Santhosh</div>
+          <div class="title">Project</div>
+        </div>
+      </div>
+
+      <div class="team" style="--img: url(../team3/images/3.jpg)">
+        <img src="../team3/images/3.jpg" alt="image3" />
+        <div class="info">
+          <div class="name">Naisel PK</div>
+          <div class="title">Project</div>
+        </div>
+      </div>
+
+      <div class="team" style="--img: url(../team3/images/4.jpg)">
+        <img src="../team3/images/4.jpg" alt="image4" />
+        <div class="info">
+          <div class="name">Tom Mathew</div>
+          <div class="title">Project</div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="join-us">
+      <div class="join-form">
+        <h1>Join Us in Our Journey</h1>
+        <p>
+          If you would like to provide help to those who need it, Please join us
+          by filling the form below :
+        </p>
+        <div class="the-form">
+          <form>
+
+            <div class="organisation">
+                <input type="radio"  id="organisation" onclick="javascript:yesnoCheck();" name="checkbox">
+                <label for="organisation">Organisation</label>
+            </div> 
+
+            <div class="individual">
+                <input type="radio" id="individual" onclick="javascript:yesnoCheck();" name="checkbox">
+                <label for="individual">Individual</label><br>
+            </div> 
+
+            <div id="ifYes" style="visibility:hidden">
+                <input type='text' id='organisation' placeholder="Your Organisation" name='yes'><br>
+            </div>
+
+            <input type='text' id='individual' placeholder="Your Name" name='yes'><br>
+            <input type="text" id="email" name="email" placeholder="  Email" ><br/>
+
+            <input type="text" id="phone" name="phone" placeholder="  Phone number"><br/>
+
+            <textarea id="msg" name="message" placeholder=" Message"></textarea><br>
+
+            <div class="button">
+                <input type="submit" id="submit" name="submit" ><br />
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
