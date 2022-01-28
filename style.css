@@ -5,6 +5,20 @@
     margin: 0;
     padding: 0;
 }
+body::-webkit-scrollbar {
+    width: 0.7em;
+  }
+   
+body::-webkit-scrollbar-track {
+    background-color: #098f6be0;
+
+}
+   
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top ,#39e5b7be, #70b2d9,#140319);
+    border-radius: 1rem;
+
+}
 body{
     margin: 0;
     font-family: "Poppins",sans-serif;
@@ -15,6 +29,7 @@ body{
 }
 .v-header{
     height: 100vh;
+    background-color: #3E676A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +43,7 @@ body{
     text-align: center;
 }
 .fullscreen-video-wrap{
+    background-color: #3E676A;
     position: absolute;
     top: 0px;
     left: 0;
@@ -199,13 +215,19 @@ svg{
     top: 0;
     left: 0;
 }
-
+.bubbles-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .bubble{
     display: inline-block;
     width: 200px;
     color: black;
     height: 100%;
+    margin: 20px;
     border-radius: 100%;
     position: relative;
     cursor: pointer;
@@ -232,7 +254,17 @@ svg{
     background: radial-gradient(circle at 50% 80%,rgba(255,255,255,0),rgba(255,255,255,0)74%,white 80%,white 84%,rgba(255,255,255,0) 100%);
     animation: pop;
 }
-
+.bubble-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.bubble-content h1{
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+}
 @keyframes pop{
     from{
         opacity: 1;
