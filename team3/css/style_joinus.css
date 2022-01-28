@@ -1,0 +1,72 @@
+#join_us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.join-form {
+    
+    margin: 50px auto;
+    text-align: center;
+}
+
+.join-form h1 { 
+
+  font-family: "Gill Sans";
+  font-size: 67px;
+  color: #70b2d9;
+  margin-top: 0;
+  text-align: center;
+}
+
+p {
+  font-size: larger;
+  text-align: center;
+  color: #70b2d9;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.the-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  color: #70b2d9;
+  
+}
+
+input {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    height: 2em;
+    border-color: black;
+    border-width: 2px;
+}
+
+.button {
+    margin-top: 15px;
+    text-align: center;
+}
+
+button {
+    background-color: white;
+}
+
+#msg {
+    border-radius: 6px;
+    border-color: black;
+    border-width: 2px;
+    max-width:fit-content;
+    min-width:max-content;
+}
+ .organisation {
+    text-align: left;
+    margin-bottom: 3px;
+ }
+
+ .individual {
+     text-align: left;
+     margin-bottom: 10px;
+ }
