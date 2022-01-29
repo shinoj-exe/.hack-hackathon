@@ -192,7 +192,7 @@ function checkButtn(){
 
     console.log(array);
 
-    var issues =["anxiety","depression","personality_disorder","PTSD","Schizophrenia"]
+    var issues =["anxiety","depression","personality_disorders","PTSD","Schizophrenia"]
     var temp;
 
     for(var i=0;i<array.length;i++)
