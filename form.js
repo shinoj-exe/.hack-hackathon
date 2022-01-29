@@ -6,6 +6,9 @@
            
 //         })
 
+
+const formResult = document.getElementById("form-results");
+
 var questAns = {};
 function checkButtn(){
     if(document.getElementById('q1y').checked)
@@ -75,6 +78,9 @@ function checkButtn(){
     let countSchizophernia=0;
     var array = [];
 
+    for(var i=0;i<array.length;i++){
+        gfg[i]=new array
+    }
     if(questAns.q1=='y')
     {
         countDepression++;    
@@ -116,10 +122,86 @@ function checkButtn(){
     array[3]=countPersonality;
     array[4]=countSchizophernia;
     
-    array.sort(function(a,b){return a-b});
+    // array.sort(function(a,b){return a-b});
+
+
     console.log(array);
     console.log(countAnxiety,countDepression)
 
+    console.log(array[array.length-1]);
+
+    console.log(array);
+
+    var issues =["anxiety","depression","personality_disorder","PTSD","Schizophrenia"]
+    var temp;
+
+    for(var i=0;i<array.length;i++)
+    {
+        for(var j=0;j<array.length-i-1;j++)
+        {
+            if(array[j]>array[j+1])
+            {
+                temp=array[j];
+                array[j]=array[j+1];
+                array[j+1]=temp;
+
+                temp=issues[j];
+                issues[j]=issues[j+1];
+                issues[j+1]=temp;
+            }
+        }
+    }
+
+    var sum=0,percentage1,percentage2;
+
+    for( var k=0;k< array.length;k++)
+    {
+        sum=sum+array[k];
+    }
+
+    percentage1 =(array[array.length-1])/sum;
+    percentage2 = (array[array.length-2]/sum);
+
+    percentage1 =percentage1.toFixed(2);
+    percentage2 =percentage2.toFixed(2);
+
+    
+    console.log(issues);
+    console.log(array);
+    console.log(sum);
 
 
+
+    function showResult(){
+    const formResult = document.getElementById("form-results");
+
+        const result = document.createElement("div")
+
+        result.innerHTML=`
+        <div class="result-title">
+        <h1>HERE IS OUR ANALYSIS FROM THE GIVEN INFORMATION</h1>
+    </div>
+    <div class="result-content">
+        According to the info you have provided to us, we have come to a conclusion that you might be suffering from <span>${issues[issues.length-1]}(${percentage1}%)</span> or <span>${issues[issues.length-2]}(${percentage2}%)</span>.
+        We are here to help you with some free resources on these issues please do go through them and do the required.
+    </div>
+    <div class="result-resources">
+        <div class="resource-1">
+            <a href="issues/${issues[issues.length-1]}.html"><button>${issues[issues.length-1]}</button></a>
+        </div>
+        <div class="resource-2">
+            <a href="issues/${issues[issues.length-2]}.html"><button>${issues[issues.length-2]}</button></a>
+        </div>
+    </div>
+
+    <div class="result-ngo">
+        We will also be providing the information provided by you to NGO's that are willing to support you. 
+    </div>
+        `
+
+        formResult.appendChild(result);
+    }
+
+    showResult();
 }
+

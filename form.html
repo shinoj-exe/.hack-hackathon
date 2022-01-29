@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <h1 id ="headerText">Mental Health Awareness Survey</h1>
+    <link rel="stylesheet" href="form.css">
 </head>
 
 <body>
+    <h1 id ="headerText">Mental Health Awareness Survey</h1>
     <form action="form.html" method="GET"> 
         <div id="qsns">
             <label for="name">Name</label>
@@ -89,12 +90,33 @@
         </div>
         
         <button type="button" onclick=" checkButtn()">submit</button>
+
         <script src="form.js"></script>
     </form>
     
 
-    <div class="form-results">
+    <div class="form-results" id="form-results">
+        <!-- <div class="result">
+            <div class="result-title">
+                <h1>HERE IS OUR ANALYSIS FROM THE GIVEN INFORMATION</h1>
+            </div>
+            <div class="result-content">
+                According to the info you have provided to us, we have come to a conclusion that you might be suffering from <span>Disease 1(x%)</span> or <span> Disease 2(y%)</span>.
+                We are here to help you with some free resources on these issues please do go through them and do the required.
+            </div>
+            <div class="result-resources">
+                <div class="resource-1">
+                    <a href=""><button>Disease 1</button></a>
+                </div>
+                <div class="resource-2">
+                    <a href=""><button>Disease 2</button></a>
+                </div>
+            </div>
 
+            <div class="result-ngo">
+                We will also be providing the information provided by you to NGO's that are willing to support you. 
+            </div>
+        </div> -->
     </div>
 
 </body>
