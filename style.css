@@ -216,3 +216,157 @@ body{
 .bubble.pop{
     animation: pop 0.5s cubic-bezier(0.16,0.87,0.48,0.99)forwards;
 }
+
+/*----------------------------team-------------------------------------*/
+
+body {
+    background-color: aliceblue;
+}
+.header {
+  text-align: center;
+  margin: auto;
+  max-width: 50vh;
+  color: #70b2d9;
+  font-size: 67px;
+  font-family: "gills sans";
+  font-weight: 1000;
+  letter-spacing: 2px;
+  padding-bottom: 48px;
+}
+
+#team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.team {
+  width: 320px;
+  height: 480px;
+  overflow: hidden;
+  margin: 8px;
+  border-radius: 16px;
+  position: relative;
+  background-color: #ffffff34;
+}
+
+.team img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 480px;
+  border-radius: 16px;
+  z-index: 1;
+  object-fit: cover;
+  border: none;
+}
+
+.team:hover img {
+  width: 160px;
+  height: 240px;
+  border: 4px double #70b2d9;
+  left: 80px;
+  top: 100px;
+  transition: 0.3s ease-in;
+}
+
+.team .info {
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  color: #363636;
+  padding: 18px;
+  border-top: 18px double #70b2d9;
+  border-radius: 50% 50% 0px 0px;
+  padding-top: 80px;
+  text-align: center;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.team .name {
+  font-size: 36px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+/*------------------------join us--------------------------------*/
+
+#join_us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.join-form {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.join-form h1 {
+  font-family: "Gill Sans";
+  font-size: 67px;
+  color: #70b2d9;
+  margin-top: 0;
+  text-align: center;
+}
+
+p {
+  font-size: larger;
+  text-align: center;
+  color: #70b2d9;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.the-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  color: #70b2d9;
+}
+
+input {
+  padding-bottom: 5px;
+  border-radius: 6px;
+  height: 2em;
+  border-color: black;
+  border-width: 2px;
+}
+
+.button {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.button:hover {
+    color: violet;
+    font-size: larger;
+}
+
+button {
+  background-color: white;
+}
+
+#msg {
+  border-radius: 6px;
+  border-color: black;
+  border-width: 2px;
+  max-width: fit-content;
+  min-width: max-content;
+}
+.organisation {
+  text-align: left;
+  margin-bottom: 3px;
+}
+
+.individual {
+  text-align: left;
+  margin-bottom: 10px;
+}
