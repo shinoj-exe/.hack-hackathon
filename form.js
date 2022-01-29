@@ -1,10 +1,11 @@
-/*const resultsList = document.getElementById('qsns')
-        new URLSearchParams(window.location.search).forEach((value,
-        name) => {
-            resultsList.append(`${name}: ${value}`)
-            resultsList.append(document.createElement('br'))
+// const resultsList = document.getElementById('qsns')
+//         new URLSearchParams(window.location.search).forEach((value,
+//         name) => {
+//             resultsList.append(`${name}: ${value}`)
+//             resultsList.append(document.createElement('br'))
            
-        })*/
+//         })
+
 var questAns = {};
 function checkButtn(){
     if(document.getElementById('q1y').checked)
@@ -118,4 +119,7 @@ function checkButtn(){
     array.sort(function(a,b){return a-b});
     console.log(array);
     console.log(countAnxiety,countDepression)
+
+
+
 }
