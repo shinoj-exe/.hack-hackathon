@@ -219,10 +219,8 @@ body{
 
 /*----------------------------team-------------------------------------*/
 
-body {
-    background-color: aliceblue;
-}
-.header {
+
+.team-heading {
   text-align: center;
   margin: auto;
   max-width: 50vh;
