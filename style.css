@@ -134,6 +134,63 @@ body{
 
 }
 
+
+
+/*SECOND_PAGE*/
+
+.secpage {
+  color: azure;
+}
+.secpage img {
+  margin-top: 100px;
+  border-radius: 16px;
+  position: absolute;
+  margin-left: 50%;
+}
+
+.secpage-content {
+  padding-bottom: 300px;
+}
+.secpage-content h1 {
+  position: relative;
+  font-size: 50px;
+  margin-left: 35%;
+  color: #002486;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.secpage p {
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 40px;
+  font-size: 32px;
+  color: rgb(6, 87, 87);
+  margin-right: 50%;
+  position: absolute;
+}
+.secpage a {
+  color: rgb(226, 241, 255);
+  font-size: 30px;
+  margin-left: 50%;
+  margin-top: 150px;
+  position: absolute;
+  transform: translate(-50%);
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 15px 70px;
+  text-align: center;
+  background-color: rgb(53, 165, 74);
+}
+
+.secpage a:hover,
+a:active {
+  background-color: rgb(64, 246, 246);
+  color: #002486;
+}
+
+
+
+
 /* BUBBLES */
 .health-issues{
     background-color: lavender;
