@@ -14,6 +14,19 @@ body{
     background-position: center;
     color: white;
 }
+body::-webkit-scrollbar {
+    width: 0.7em;
+  }
+   
+body::-webkit-scrollbar-track {
+    background-color: #140319;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top ,#6600FF, #19004c);
+    border-radius: 1rem;
+
+}
 .title{
     padding: 1rem;
 }
@@ -50,6 +63,7 @@ body{
 .content-body img{
     border-radius: 10px;
     max-width: 650px;
+    object-fit: cover;
 }
 .symptoms,.causes,.cure{
     margin: 1rem;
