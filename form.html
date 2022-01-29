@@ -10,18 +10,19 @@
 </head>
 
 <body>
+    <script type = "module" src="form.js"></script>
     <h1 id ="headerText">Mental Health Awareness Survey</h1>
     <form action="form.html" method="GET"> 
         <div id="qsns">
             <label for="name">Name</label>
-            <input required  name="name"><br>
+            <input required id="uname" name="name"><br>
         
             <label for="age">Age:</label>
-            <input required  name="age"><br>
+            <input required id="age" name="age"><br>
        
         
             <label for="address">Address:</label>
-            <input required name="address"><br>
+            <input required id="address" name="address"><br>
             
             
             
@@ -89,9 +90,9 @@
         
         </div>
         
-        <button type="button" onclick=" checkButtn()">submit</button>
+        <button type="button" id="btn">submit</button>
 
-        <script src="form.js"></script>
+       
     </form>
     
 
