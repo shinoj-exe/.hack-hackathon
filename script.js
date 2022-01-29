@@ -28,3 +28,13 @@ bubbles.forEach(bubble =>{
         bubble.classList.toggle("pop")
     })
 })
+
+
+//function to show the input for organisation name only when organisation radio is on
+function yesnoCheck() {
+    if (document.getElementById('organisation').checked) {
+        document.getElementById('ifYes').style.visibility = 'visible';
+    }
+    else document.getElementById('ifYes').style.visibility = 'hidden';
+
+} 
