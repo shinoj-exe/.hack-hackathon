@@ -11,9 +11,9 @@
 </head>
 <body>
 
-    <header class="v-header box">
+    <header  class="v-header box">
 
-        <div class="fullscreen-video-wrap">
+        <div id="home" class="fullscreen-video-wrap">
             <video src="/assests/Video/video.mp4" autoplay loop muted></video>
         </div>
         <div class="header-overlay"></div>
@@ -21,17 +21,17 @@
         <div class="header-content">
             <div class="text-white-600 body-font">
                 <div class="title">
-                    <a class="flex title-font font-medium items-center text-white-900 mb-4 md:mb-0">
+                    <a  href="#home" class="flex title-font font-medium items-center text-white-900 mb-4 md:mb-0">
                         <span class="ml-3 text-xl">WE CARE </span>
                     </a>
                 </div>
                 <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                     <nav class="nav-items md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                    <a href="#" class="mr-5 hover:text-gray-900">Home</a>
-                    <a href="#" class="mr-5 hover:text-gray-900">Talk to Us!</a>
-                    <a href="#" class="mr-5 hover:text-gray-900">General Info</a>
-                    <a href="#" class="mr-5 hover:text-gray-900">About Us</a>
-                    <a href="#" class="mr-5 hover:text-gray-900">Join Us</a>
+                    <a href="#home" class="mr-5 hover:text-gray-900">Home</a>
+                    <a href="#secPage" class="mr-5 hover:text-gray-900">Talk to Us!</a>
+                    <a href="#bubbles" class="mr-5 hover:text-gray-900">General Info</a>
+                    <a href="#about" class="mr-5 hover:text-gray-900">About Us</a>
+                    <a href="#join-us" class="mr-5 hover:text-gray-900">Join Us</a>
 
                     <button class="btn">Log In</button>
                   </nav>
@@ -55,26 +55,23 @@
         </div>
 
     </header>
-
-    <div class="talk" id="talk">
-    </div>
     
   
     
-     <div style="margin-top: 50px; margin-bottom: 300px;">
+     <div id="secPage" style="margin-top: 50px; margin-bottom: 300px;">
         <div class="secpage">
             <img src="assests/Images/sec_page_img.jpg" alt="we_find_img">
             <div class="secpage-content">
                 <h1>WE WILL FIND</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolores repellendus atque nihil ipsa? Minus repellat repellendus autem quo aspernatur, voluptas quibusdam soluta placeat debitis iusto, praesentium labore porro. Ab!</p>
             </div>
-            <a href="form.html" target="_blank">Find the problem</a>
+            <a href="form.html" target="_blank">Find the problem!</a>
         </div>       
     </div>
 
     
 
-    <div class="health-issues">
+    <div id="bubbles" class="health-issues">
 
         <div class="issues-title">
             Educate Yourself
@@ -169,7 +166,7 @@
    <!--TEAM -->
     
     
-    <div class="team-heading">Our Team</div>
+    <div id="about" class="team-heading">Our Team</div>
 
     <section id="team">
       <div class="team" style="--img: url(./1.jpg)">
@@ -244,7 +241,6 @@
         </div>
       </div>
     </section>
-    <p>naisel</p>
 
 
 <script src="script.js"></script>
