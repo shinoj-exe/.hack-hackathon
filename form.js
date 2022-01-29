@@ -5,12 +5,42 @@
 //             resultsList.append(document.createElement('br'))
            
 //         })
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+  //import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAFFfP-Ej3KtxQ3DU-dMkiuRshCF-JYF84",
+    authDomain: "myusers-b76f0.firebaseapp.com",
+    databaseURL: "https://myusers-b76f0-default-rtdb.firebaseio.com",
+    projectId: "myusers-b76f0",
+    storageBucket: "myusers-b76f0.appspot.com",
+    messagingSenderId: "721621691724",
+    appId: "1:721621691724:web:565a138d6e8d9ed59fb3e9",
+    measurementId: "G-RLCNGWEE0Z"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  import {getDatabase, ref, set, child, update, remove}
+  from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
+  const db=getDatabase();
+  var uname=document.getElementById("uname");
+  var age=document.getElementById("age");
+  var address=document.getElementById("address");
+  var btn=document.getElementById("btn");
+  var gender;
 
 const formResult = document.getElementById("form-results");
 
 var questAns = {};
 function checkButtn(){
+
+
     if(document.getElementById('q1y').checked)
         {questAns.q1=document.getElementById('q1y').value}
     else questAns.q1=document.getElementById('q1n').value
@@ -69,6 +99,36 @@ function checkButtn(){
     if(document.getElementById('q14y').checked)
         {questAns.q14=document.getElementById('q14y').value}
     else questAns.q14=document.getElementById('q14n').value
+
+
+    set(ref(db, "users/"+ uname.value),{
+        Name:uname.value,
+        Age: age.value,
+        address: address.value,
+        q1:questAns.q1,
+        q2: questAns.q2,
+        q3: questAns.q3,
+        q4: questAns.q4,
+        q5: questAns.q5,
+        q6: questAns.q6,
+        q7: questAns.q7,
+        q8: questAns.q8,
+        q9: questAns.q9,
+        q10: questAns.q10,
+        q11: questAns.q11,
+        q12: questAns.q12,
+        q13: questAns.q13,
+        q14: questAns.q14
+    })
+    .then(()=>{
+    alert("data stored")
+    })
+    .catch((error)=>{
+    alert(error);
+    });
+
+
+
     
     console.log(questAns)
     let countDepression=0;
@@ -152,6 +212,7 @@ function checkButtn(){
         }
     }
 
+
     var sum=0,percentage1,percentage2;
 
     for( var k=0;k< array.length;k++)
@@ -204,4 +265,6 @@ function checkButtn(){
 
     showResult();
 }
+btn.addEventListener('click',checkButtn);
+
 
