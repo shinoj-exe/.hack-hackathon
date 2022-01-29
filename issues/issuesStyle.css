@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins",sans-serif;
+    background-image: url("/assests/Images/circle.svg") ;
+    backdrop-filter: blur(9px) brightness(70%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+.title{
+    padding: 1rem;
+}
+.title h1{
+    color: rgba(255, 255, 255, 0.849);
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.question{
+    font-size: 40px;
+}
+.question span{
+    color: #39e5b7be;
+    font-weight: bold;
+}
+
+.content,.symptoms,.causes,.cure{
+    padding: 1.25rem;
+}
+.content-body{
+    display: flex;
+}
+.content-text{
+    padding: 1rem;
+}
