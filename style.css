@@ -27,6 +27,12 @@ body{
     color: #333;
     overflow-x: hidden;
 }
+a:active,a:focus{
+  text-decoration: none;
+  color: 0;
+  background-color: transparent;
+  
+}
 .v-header{
     height: 100vh;
     background-color: #3E676A;
@@ -210,6 +216,7 @@ a:active {
     flex-wrap: wrap;
 }
 
+
 .bubble{
     display: inline-block;
     width: 200px;
@@ -222,10 +229,12 @@ a:active {
     background: radial-gradient(circle at 50% 55%,rgba(240, 255, 255, 0.8),rgba(112,2178,217,0.3)40%,rgba(57,229,182,0.6)60%,rgba(57,229,182,0.23));
     box-shadow: 0 0 20px rgba(57,229,182,0.6), 0 0 2px rgba(57,229,182,0.23);
     transition: all 0.3s ease-in;
+    -webkit-tap-highlight-color: transparent;
 }
 .bubble:hover{
     transform: rotate(10deg) scale(1.25);
 }
+
 .bubble::before{
     content: "";
     display: inline-block;
