@@ -420,9 +420,9 @@ input {
   text-align: center;
 }
 
-.button:hover {
-    color: violet;
-    font-size: larger;
+#submit:hover {
+  cursor:pointer;
+  color: #12364be3;
 }
 
 button {
