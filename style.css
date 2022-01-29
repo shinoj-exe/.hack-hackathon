@@ -27,12 +27,6 @@ body{
     color: #333;
     overflow-x: hidden;
 }
-a:active,a:focus{
-  text-decoration: none;
-  color: 0;
-  background-color: transparent;
-  
-}
 .v-header{
     height: 100vh;
     background-color: #3E676A;
@@ -215,7 +209,11 @@ a:active {
     align-items: center;
     flex-wrap: wrap;
 }
-
+a:active,a:focus{
+  text-decoration: none;
+  color: 0;
+  background-color: transparent;
+}
 
 .bubble{
     display: inline-block;

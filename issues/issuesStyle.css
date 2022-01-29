@@ -49,6 +49,7 @@ body{
 }
 .content-body img{
     border-radius: 10px;
+    max-width: 650px;
 }
 .symptoms,.causes,.cure{
     margin: 1rem;
