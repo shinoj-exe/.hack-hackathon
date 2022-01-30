@@ -29,11 +29,10 @@
   import {getDatabase, ref, set, child, update, remove}
   from "https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js";
   const db=getDatabase();
-  var uname=document.getElementById("uname");
-  var age=document.getElementById("age");
-  var address=document.getElementById("address");
+  var uname=document.getElementById("uname").value;
+  var age=document.getElementById("age").value;
+  var address=document.getElementById("address").value;
   var btn=document.getElementById("btn");
-  var gender;
 
 const formResult = document.getElementById("form-results");
 
