@@ -121,7 +121,7 @@ function checkButtn(){
         q14: questAns.q14
     })
     .then(()=>{
-    alert("data stored")
+    alert("Data has been successfully stored!")
     })
     .catch((error)=>{
     alert(error);
@@ -245,6 +245,8 @@ function checkButtn(){
     <div class="result-content">
         According to the info you have provided to us, we have come to a conclusion that you might be suffering from <span>${issues[issues.length-1]}(${percentage1}%)</span> or <span>${issues[issues.length-2]}(${percentage2}%)</span>.
         We are here to help you with some free resources on these issues please do go through them and do the required.
+        <br>
+        CHECK OUT THESE RESOURCES BELOW TO KNOW MORE ABOUT IT:
     </div>
     <div class="result-resources">
         <div class="resource-1">
