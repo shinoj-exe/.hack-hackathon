@@ -17,7 +17,13 @@ body {
 body::-webkit-scrollbar {
   width: 0.7em;
 }
-
+a:focus,a:active{
+  text-decoration: none;
+}
+a:visited { 
+  text-decoration: none; 
+  color: #9650ff; 
+ }
 body::-webkit-scrollbar-track {
   background-color: #140319;
 }
@@ -47,7 +53,7 @@ body::-webkit-scrollbar-thumb {
 .content,
 .symptoms,
 .causes,
-.cure {
+.cure,.ngo {
   padding: 1.25rem;
 }
 .content-body {
@@ -78,8 +84,6 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 10px;
   border-bottom: solid #44f7c7ef 3px;
 }
-
-.ngo {
-  margin: 0.25rem;
-  padding: 0.5rem;
+.ngo-list li span{
+  color: #44f7c7ef;
 }
